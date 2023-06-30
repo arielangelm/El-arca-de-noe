@@ -35,3 +35,8 @@ function calcularCuotas() {
     resultadoElement.innerHTML = "El precio total es: " + precioConPorcentaje.toFixed(2) + "<br>El precio por cuota para " + cuotas + " cuotas es: " + precioCuota.toFixed(2);
   }
   
+  function reiniciarFormulario() {
+    document.getElementById("precio").value = "";
+    document.getElementById("cuotas").value = "";
+    document.getElementById("resultado").innerHTML = "";
+  }
